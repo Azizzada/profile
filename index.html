@@ -18,16 +18,19 @@
   </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="150">
-
-    <div class="hero">
-      <nav>
+    <header>
+      <nav class="navlist">
         <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Contact Me</a></li>
       </nav>
+    </header>
 
+    <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="hero">
       <div class="text">
 
         <h1>About me</h1>
@@ -41,8 +44,8 @@
         <li><i class="fa-solid fa-location-dot"></i>&nbsp&nbspBrossard, QC, Canada</li>
       </div>
 
-      <div class="img">
-        <img src="assets/images/IMG_5212.jpg" alt="">
+      <div class="home-img">
+        <img id="home-img" src="assets/images/IMG_5212.jpg" alt="">
       </div>
 
       <div class="social">
@@ -52,10 +55,28 @@
           <li><a href="https://github.com/Azizzada"><i class="fa-brands fa-github"></i></a></li>
         </ul>
       </div>
+    </div>
+  </section>
 
+    <!-- About me Section -->
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="assets/images/IMG_1070.jpg" alt="">
     </div>
 
+    <div class="about-text">
+      <h2>About me</h2>
+      <p>As a recent graduate of a web development bootcamp, I am excited
+        to  bring my passion for problem-solving and coding to the table. With
+        a strong foundation in HTML, CSS, and Ruby on Rails, I am ready to
+        tackle new challenges and continue learning in the field. I am a
+        self-starter who is eager to apply my skills to real-world projects and
+        make a positive impact. I look forward to the opportunity to work with
+        a team and contribute to the success of your company.</p>
+    </div>
+  </section>
 
+  <script type="text/javascript" src="assets/JS/script.js"></script>
 </body>
 
 </html>

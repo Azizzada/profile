@@ -1,7 +1,11 @@
-*{padding: 0;
-margin: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
 }
 
 .hero{
@@ -11,23 +15,29 @@ font-family: 'Poppins', sans-serif;
   background: linear-gradient(90deg, rgb(18, 18,18,1) 26%, rgba(255, 255, 255,1) 26%, rgba(255, 255, 255,1) 100%);
   position: relative;
 }
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 50px;
-  padding-left: 4%;
-  padding-right: 4%;
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+	z-index: 1000;
+	display: flex;
+	justify-content: flex-end;
+	background: transparent;
+	padding: 22px 5%;
+	border-bottom: 1px solid transparent;
+	transition: all .45s ease;
 }
-nav .logo{
-  color: #9897a9;
-  font-size: 28px;
-  letter-spacing: 1px;
+.navlist{
+	display: flex;
+  list-style: none;
 }
-nav i{
-  font-size: 25px;
-  color: #121212;
-  cursor: pointer;
+.navlist a{
+	color: #121212;
+	font-size: 17px;
+	font-weight: 500;
+	margin: 0 25px;
+	transition: all .45s ease;
 }
 .text{
   position: absolute;
@@ -52,15 +62,14 @@ nav i{
   font-size: 18px;
   color: #121212;
   letter-spacing: 1px;
-  list-style: none;
 }
-.img{
+.home-img{
   position: absolute;
   top: 50%;
   left: 17%;
   transform: translateY(-50%);
 }
-.img img{
+#home-img{
   width: 470px;
   height: 480px;
   object-fit: cover;
@@ -84,5 +93,39 @@ nav i{
   transform: scale(1.2);
   color: white;
   transition: .3s;
-
+}
+header.sticky{
+  background: white;
+  border-bottom: 1px solid #121212;
+  padding: 12px 5%;
+}
+.about{
+  height: 100vh;
+  width: 100%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+  justify-items: center;
+	gap: 1.5rem;
+}
+.about-img img{
+	max-width: 530px;
+	height: auto;
+	width: 100%;
+	border-radius: 8px;
+}
+.about-text {
+  padding-right: 200px;
+}
+.about-text h2{
+	color: #121212;
+  font-size: 80px;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+.about-text p{
+	color: #9897a9;
+  font-size: 17px;
+  line-height: 30px;
+  margin-bottom: 20px;
 }
