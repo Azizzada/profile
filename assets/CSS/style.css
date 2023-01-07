@@ -33,26 +33,12 @@ nav i{
   position: absolute;
   top: 50%;
   left: 54%;
+  right: 10%;
   transform: translateY(-50%);
-}
-button{
-  background: #808080;
-  padding: 5px 16px;
-  border: none;
-  color: white;
-  font-size: 13px;
-  font-weight: bold;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-button:hover{
-  transform: scale(1.2);
-  transition: .4s;
-  cursor: pointer;
 }
 .text h1{
   color: #121212;
-  font-size: 105px;
+  font-size: 80px;
   letter-spacing: 2px;
   margin-bottom: 5px;
 }
@@ -63,7 +49,7 @@ button:hover{
   margin-bottom: 20px;
 }
 .text li{
-  font-size: 22px;
+  font-size: 18px;
   color: #121212;
   letter-spacing: 1px;
   list-style: none;
@@ -75,8 +61,8 @@ button:hover{
   transform: translateY(-50%);
 }
 .img img{
-  width: 600px;
-  height: 610px;
+  width: 470px;
+  height: 480px;
   object-fit: cover;
 }
 .social{
