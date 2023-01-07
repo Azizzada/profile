@@ -132,6 +132,7 @@ header.sticky{
 .portfolio{
   height: 100vh;
   width: 100%;
+  background-color: blue;
 }
 .portfolio-content{
 	display: grid;
@@ -202,7 +203,7 @@ header.sticky{
 }
 .main-text{
 	text-align: center;
-  margin-top: 50px;
+  padding-top: 100px;
 }
 .main-text p{
 	color: var(--second-color);
@@ -212,4 +213,9 @@ header.sticky{
 .main-text h2{
 	font-size: var(--h2-font);
 	line-height: 1;
+}
+.contact{
+  background-color: black;
+  height: 100vh;
+  width: 100%;
 }
