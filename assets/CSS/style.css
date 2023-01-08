@@ -132,14 +132,16 @@ header.sticky{
 .portfolio{
   height: 100vh;
   width: 100%;
-  background-color: blue;
+  background-color: #9897a9;
 }
 .portfolio-content{
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-	align-items: center;
+	grid-template-columns: repeat(3, auto);
+  justify-content: center;
+  align-content: center;
   justify-items: center;
-	margin-top: 5rem;
+  align-items: center;
+	margin-top: 3rem;
   gap: 2.5rem;
 }
 .row{
@@ -149,8 +151,8 @@ header.sticky{
 	cursor: pointer;
 }
 .row img{
-	width: 350px;
-  height: 350px;
+	width: 250px;
+  height: 200px;
   object-fit: cover;
 	border-radius: 8px;
 	display: block;
@@ -206,12 +208,13 @@ header.sticky{
   padding-top: 100px;
 }
 .main-text p{
-	color: var(--second-color);
-	font-size: 15px;
+	color: white;
+	font-size: 80px;
+  font-weight: 500;
 	margin-bottom: 15px;
 }
 .main-text h2{
-	font-size: var(--h2-font);
+	font-size: 20px;
 	line-height: 1;
 }
 .contact{
