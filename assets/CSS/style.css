@@ -168,6 +168,69 @@ header.sticky{
   line-height: 30px;
   margin-bottom: 20px;
 }
+.qualification{
+  height: 100vh;
+  width: 100%;
+	display: grid;
+	background-color: white;
+}
+.qualification-tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.qualification-button{
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+.qualification-button:hover{
+  color: #9897a9;
+}
+.qualification-icon{
+  font-size: 1.8rem;
+  margin-right: 10px;
+}
+.qualification-data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+.qualification-title{
+  font-size: 20px;
+  font-weight: 400;
+}
+.qualification-subtitle{
+  display: inline-block;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.qualification-calender{
+  font-size: 15px;
+  color: #121212;
+}
+.qualification-rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #9897a9;
+  border-radius: 50%;
+}
+.qualification-line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #9897a9;
+  transform: translate(6px, -7px);
+}
+
+.qualification [data-content]{
+  display: none;
+}
+.qualification_active [data-content]{
+  display: block;
+}
+
 .portfolio{
   height: 100vh;
   width: 100%;
@@ -418,10 +481,10 @@ form textarea{
 
 @media (max-width: 1100px){
 	:root{
-		--big-font: 4rem;
-	  --h2-font: 2.5rem;
-	  --p-font: 1rem;
-	  transition: .1s;
+	--big-font: 4rem;
+	--h2-font: 2.5rem;
+	--p-font: 1rem;
+	transition: .1s;
 	}
 	.home-text h3{
 		font-size: 2.5rem;
@@ -478,6 +541,6 @@ form textarea{
 		color: var(--text-color);
 	}
 	.navlist.open{
-		top: 100%; */
+		top: 100%;
 	}
-}
+}*/
